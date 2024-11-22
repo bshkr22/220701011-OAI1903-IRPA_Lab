@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Demo</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            margin: 10px 20px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            max-width: 700px;
+        }
+
+        /* Card Section */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px 10px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        /* Iframe Styles */
+        iframe {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            max-width: 100%;
+            width: 500px;
+            height: 700px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to AI Chatbot</h1>
+    <div class="card">
+        <p>
+            Meet your intelligent virtual assistant, designed to help with all your questions and tasks. Whether you need answers, guidance, or just a friendly conversation, the AI Chatbot is here for you 24/7. 
+        </p>
+        <p>
+            This chatbot can understand your queries, provide relevant responses, and even assist with creative solutions. Give it a try!
+        </p>
+    </div>
+    <iframe
+        allow="microphone;"
+        src="https://console.dialogflow.com/api-client/demo/embedded/0a7f8ee5-b8b0-4ac6-b34b-1c2a54b3d626">
+    </iframe>
+    <footer>
+        © 2024 AI Chatbot Demo. All Rights Reserved.
+    </footer>
+</body>
+</html>

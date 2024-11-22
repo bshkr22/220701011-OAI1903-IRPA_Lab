@@ -1,0 +1,252 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="688,3783.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="698,3718.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtset" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_dtset" />
+      <Variable x:TypeArguments="x:String" Name="answer" />
+      <Variable x:TypeArguments="x:String" Name="question" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="636,754" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,666.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,556" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="A:\RPA project\hack-a-bot\sam.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,282" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="dt_" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:B6&quot;)]" SaveTo="[dt_dtset]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+    <Assign sap:VirtualizedContainerService.HintSize="636,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[dtset]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[dt_dtset]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Dialogflow" sap:VirtualizedContainerService.HintSize="636,2689.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="41505bf4-939a-46ca-8975-1858e21c512d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,2470.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtset]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,2354.6666666666665" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,2166" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[question]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[answer]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create Intent'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41505bf4-939a-46ca-8975-1858e21c512d" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://dialogflow.cloud.google.com/#/agent/chatbt-ifrg/intents" DesignTimeRectangle="1222, 255, 169, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Create Intent'" FullSelectorArgument="&lt;webctrl aaname='                 Create Intent             ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Create Intent             ' tag='BUTTON' type='button' class='md-button md-primary md-raised ng-binding ng-isolate-scope progress-button md-ink-ripple' check:innerText='CREATE INTENT' /&gt;" Guid="0f8e214b-262b-4bf1-af2c-c8f044ebe623" InformativeScreenshot="d401aa12c030c98ed53a672f75797768.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dialogflow' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT entity-name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="41505bf4-939a-46ca-8975-1858e21c512d" Text="[&quot;intent:&quot;+question]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://dialogflow.cloud.google.com/#/agent/chatbt-ifrg/newIntent" DesignTimeRectangle="436, 249, 777, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT entity-name'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;md-input-container&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='form-header ng-pristine ng-untouched md-input ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength' aaname='' /&gt;" Guid="d03f5973-126f-4839-9b99-6cd9ee85e3a5" InformativeScreenshot="cbf5b2ee9b7efa739fcf06b465a1e7fe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dialogflow' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="41505bf4-939a-46ca-8975-1858e21c512d" Text="[&quot;'&quot;+question+&quot;'&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://dialogflow.cloud.google.com/#/agent/chatbt-ifrg/newIntent" DesignTimeRectangle="423, 768, 960, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;intent-user-says-editor&amp;gt;div&amp;gt;div&amp;gt;user-says-editor&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DIV' class='form-control template-editor-holder b-user-says-editor ng-pristine ng-valid ng-isolate-scope ng-not-empty custom-classifier-enabled ng-touched' aaname='' /&gt;" Guid="b0992edf-b7c3-4aee-a06f-029e917a989b" InformativeScreenshot="9db5cff6730d21bf98d728923b590970.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dialogflow' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,185.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(pgdn)][u(hk)]" Version="V3" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA prompt-empty'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="41505bf4-939a-46ca-8975-1858e21c512d" Text="[answer]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://dialogflow.cloud.google.com/#/agent/chatbt-ifrg/newIntent" DesignTimeRectangle="567, 769, 653, 33" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA prompt-empty'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;intent-rich-response&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;md-card&amp;gt;md-card-content&amp;gt;intent-response-content&amp;gt;intent-text-response&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='TEXTAREA' class='borderless  ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength' aaname='' /&gt;" Guid="b64270ad-1304-4f6d-a31c-e18b7c80bf7b" ImageBase64="" InformativeScreenshot="e18cf3c3254f7e3de65269168b128005.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dialogflow' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="434,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41505bf4-939a-46ca-8975-1858e21c512d" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://dialogflow.cloud.google.com/#/agent/chatbt-ifrg/newIntent" DesignTimeRectangle="1260, 255, 110, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl aaname='                 Save             ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Save             ' tag='BUTTON' type='button' class='md-button md-primary md-raised ng-binding ng-isolate-scope progress-button md-ink-ripple' check:innerText='SAVE' /&gt;" Guid="c9389eaa-fe30-4d3d-b723-2434dd253e59" InformativeScreenshot="598a8c71d588a6f884ea2ec4f74c1ad9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dialogflow' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Intents'" sap:VirtualizedContainerService.HintSize="434,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41505bf4-939a-46ca-8975-1858e21c512d" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://dialogflow.cloud.google.com/#/agent/chatbt-ifrg/editIntent/1af26903-25db-4e32-808c-92b943e52068/" DesignTimeRectangle="9, 439, 336, 58" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Intents'" FullSelectorArgument="&lt;webctrl aaname='                                          Intents               *' class='md-ink-ripple' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                          Intents               *' class='md-ink-ripple' tag='A' type='' check:innerText='Intents' /&gt;" Guid="1bb631d2-d769-461d-934e-764fd2c3d8e6" InformativeScreenshot="67e95b42756f27c64019bd180f638a05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dialogflow' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="ff4b03908c4b83f57b582e4feeb59f4e.jpg" Selector="&lt;html app='chrome.exe' title='Dialogflow' /&gt;" Title="Dialogflow" Url="https://dialogflow.cloud.google.com/#/agent/chatbt-ifrg/intents" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
